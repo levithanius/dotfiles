@@ -198,7 +198,7 @@ card = intel_backlight
 
 [module/updates-arch]
 type = custom/script
-exec = ~/.config/polybar-scripts/updates-arch.sh
+exec = ~/.config/polybar/scripts/updates-arch.sh
 interval = 600
 
 [module/cpu]

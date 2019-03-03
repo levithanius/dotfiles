@@ -11,7 +11,6 @@
 
 set $mod Mod4
 
-exec ~/.screenlayout/config.sh
 exec --no-startup-id nitrogen --restore &
 exec compton -GCb --backend glx --paint-on-overlay --vsync opengl-swc &
 #exec --no-startup-id volumeicon 
@@ -24,6 +23,7 @@ exec --no-stratup-id dunst
 exec nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" 
 exec --no-startup-id redshift-gtk -l 53.23:10.41 
 exec udiskie &
+exec ~/.screenlayout/config.sh
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -51,7 +51,7 @@ gaps inner 10
 gaps outer 5
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec termite 
 #i3-sensible-terminal
 
 bindsym $mod+q exec qutebrowser

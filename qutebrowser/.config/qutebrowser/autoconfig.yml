@@ -6,6 +6,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        Q: close
         m: spawn mpv {url}
         q: tab-close
         zr: open -t reddit.com

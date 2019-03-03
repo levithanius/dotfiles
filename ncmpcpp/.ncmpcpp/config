@@ -22,15 +22,15 @@
 #
 ##### connection settings #####
 #
-#mpd_host = localhost
+mpd_host = localhost
 #
-#mpd_port = 6600
+mpd_port = 6600
 #
-#mpd_connection_timeout = 5
+mpd_connection_timeout = 5
 #
 ## Needed for tag editor and file operations to work.
 ##
-#mpd_music_dir = ~/music
+mpd_music_dir = ~/Musik
 #
 #mpd_crossfade_time = 5
 #
@@ -325,7 +325,7 @@
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = alternative 
 #
 #data_fetching_delay = yes
 #
