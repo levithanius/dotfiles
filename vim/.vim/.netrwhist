@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/levi/.ncmpcpp'
 let g:netrw_dirhist_2='/home/levi/.config/mopidy'
 let g:netrw_dirhist_3='/home/levi/.bash_it'
 let g:netrw_dirhist_4='/home/levi/.config/termite'
 let g:netrw_dirhist_5='/home/levi/.config/mopidy'
 let g:netrw_dirhist_6='/home/levi/.config/awesome/themes/multicolor'
+let g:netrw_dirhist_7='/home/levi/.vim'

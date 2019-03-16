@@ -3,6 +3,8 @@
 
 config_version: 2
 settings:
+  backend:
+    global: webengine
   bindings.commands:
     global:
       normal:
@@ -11,6 +13,8 @@ settings:
         q: tab-close
         zr: open -t reddit.com
         zy: open -t youtube.com
+  qt.force_software_rendering:
+    global: chromium
   tabs.max_width:
     global: 2
   tabs.position:

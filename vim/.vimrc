@@ -4,6 +4,8 @@ let g:airline_theme='nord'
 let g:airline_powerline_fonts = 1 
 set number
 set encoding=utf-8
+filetype plugin indent on
+syntax on
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}

@@ -1,7 +1,7 @@
 [colors]
-background = #343d46
+background = #1d1f21
 background-alt = #2b303b
-foreground = #eff1f5
+foreground = #c5c8c6
 foreground-alt = #eff1f5
 primary = #eff1f5
 secondary = #4f5b66
@@ -9,7 +9,6 @@ green = #a3be8c
 alert = #bf616a
 
 [bar/dp0]
-;monitor = ${env:MONITOR:HDMI-0}
 monitor = ${env:MONITOR:DVI-I-1}
 width = 100%
 height = 26
@@ -22,7 +21,7 @@ foreground = ${colors.foreground}
 
 border-size = 5
 border-bottom-size = 5
-border-top-size = 5
+border-top-size = 3
 
 line-size = 2
 line-color = ${colors.primary}
@@ -38,7 +37,7 @@ font-0 = Hack:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=11;2
 font-2 = DejaVu Sans:pixelsize=12;2
 
-modules-left = i3
+modules-left = i3 
 modules-center = mpd 
 modules-right = eth root home date 
 
@@ -52,8 +51,7 @@ scroll-down = i3wm-wsprev
 ;scroll-down = bspwm-deskprev
 
 [bar/dp2]
-monitor = ${env:MONITOR:DVI-D-0}
-;monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:DVI-D-1}
 width = 100%
 height = 26
 top = true
@@ -65,7 +63,7 @@ foreground = ${colors.foreground}
 
 border-size = 5
 border-bottom-size = 5
-border-top-size = 5
+border-top-size = 3
 
 line-size = 2
 line-color = #eff1f5
@@ -82,7 +80,7 @@ font-0 = FontAwesome:pixelsize=12;2
 font-2 = DejaVu Sans:pixelsize=12;2
 
 modules-center= updates-arch cpu memory temperature pkg git-status
-modules-left= i3
+modules-left= i3 
 modules-right = volume date
 
 scroll-up = i3wm-wsnext
@@ -149,7 +147,7 @@ ws-icon-default = 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = ${colors.background}
 label-mode-background = ${colors.primary}
 
@@ -157,7 +155,7 @@ label-mode-background = ${colors.primary}
 label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
@@ -205,14 +203,14 @@ interval = 600
 type = internal/cpu
 interval = 2
 format-prefix = "  "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.foreground}
 label = %percentage%%
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = "  "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.foreground}
 label = %percentage_used%%
 
 [module/wlan]
@@ -255,7 +253,7 @@ date = "%Y-%m-%d "
 time = %H:%M
 
 format-prefix = "  "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.foreground}
 
 label = %date% %time%
 
@@ -264,7 +262,7 @@ type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
 label-volume = "  "
-label-volume-foreground = ${colors.primary}
+label-volume-foreground = ${colors.foreground}
 label-muted = ─────────
 format-muted-prefix = "  │"
 label-muted-foreground = ${colors.secondary}
@@ -292,7 +290,7 @@ type = internal/temperature
 thermal-zone = 2
 warn-temperature = 60
 format-prefix = "  "
-format-prefix-foreground = ${colors.primary}
+format-prefix-foreground = ${colors.foreground}
 format = <label>
 format-warn-prefix = ${self.format-prefix}
 format-warn = <label-warn>
